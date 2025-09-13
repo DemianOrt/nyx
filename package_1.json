@@ -1,0 +1,38 @@
+{
+  "name": "nyx-assistant",
+  "version": "0.1.0",
+  "description": "Nyx - Tu Asistente Personal de C\u00f3digo Abierto",
+  "main": "server/src/index.js",
+  "scripts": {
+    "start": "./start.sh",
+    "dev": "cd server && npm run dev",
+    "install-deps": "cd server && npm install",
+    "docker:build": "docker build -t nyx .",
+    "docker:run": "docker-compose up -d",
+    "docker:dev": "docker-compose --profile dev up",
+    "docker:stop": "docker-compose down",
+    "logs": "docker-compose logs -f",
+    "health": "curl -f http://localhost:3000/health"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/nyx.git"
+  },
+  "keywords": [
+    "ai",
+    "assistant",
+    "nodejs",
+    "python",
+    "gemini",
+    "perplexity",
+    "calendar",
+    "automation",
+    "open-source"
+  ],
+  "author": "Nyx Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "python": ">=3.9.0"
+  }
+}
